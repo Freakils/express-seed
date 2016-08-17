@@ -20,9 +20,8 @@ app.get('/', function(req, res){
     res.render('light');
 });
 
-app.post('/light', function(req, res){
-    console.log(req.body)
-    res.redirect('/');
+app.get('/transaction', function(req, res){
+  res.render('transaction');
 });
 
 var port = process.env.port || 3007;
